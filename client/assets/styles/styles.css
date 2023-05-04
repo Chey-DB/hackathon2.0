@@ -2,7 +2,6 @@
 font-family: 'Comfortaa', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Pacifico', cursive;*/
-
 body{
     margin: 40px auto;
     max-width: 650px;
@@ -26,27 +25,21 @@ body{
         hsl(237deg 86% 90%) 89%,
         hsl(233deg 100% 89%) 100%)
 }
-
-
 h1,h2,h3 {
     line-height: 1.2
 }
-
 fieldset {
     border: none;
 }
-
 label {
     width: 140px;
     display: inline-block;
 }
-
 .container {
     display: flex;
     flex-direction: column;
     padding: 0.2rem;
 }
-
 button {
     font-size: 16px;
     height:40px;
@@ -55,12 +48,9 @@ button {
     color:white;
     border-radius: 3px;
 }
-
-
 p {
     padding: 15px;
 }
-
 .text {
     width: 314px;
     height: 35px;
@@ -68,5 +58,3 @@ p {
     border: none;
     border-radius: 3px;
 }
-
-

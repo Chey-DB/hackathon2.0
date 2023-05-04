@@ -1,4 +1,60 @@
-a {
-    text-decoration: none;
-    color: white;
+/* Font: 
+font-family: 'Comfortaa', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;*/
+body{
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+    padding: 0 10px;
+    /* background-color: #E4E9FD;
+    background-image: linear-gradient(25deg, #C8CEFF 53%, #FFE7DD 50%); */
+    background-image: linear-gradient(
+        90deg,
+        hsl(18deg 100% 93%) 0%,
+        hsl(8deg 69% 93%) 11%,
+        hsl(349deg 45% 92%) 22%,
+        hsl(321deg 31% 90%) 33%,
+        hsl(283deg 31% 90%) 44%,
+        hsl(263deg 44% 90%) 56%,
+        hsl(251deg 58% 90%) 67%,
+        hsl(243deg 72% 90%) 78%,
+        hsl(237deg 86% 90%) 89%,
+        hsl(233deg 100% 89%) 100%)
+}
+h1,h2,h3 {
+    line-height: 1.2
+}
+fieldset {
+    border: none;
+}
+label {
+    width: 140px;
+    display: inline-block;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+}
+button {
+    font-size: 16px;
+    height:40px;
+    width: 150px;
+    background-color: black;
+    color:white;
+    border-radius: 3px;
+}
+p {
+    padding: 15px;
+}
+.text {
+    width: 314px;
+    height: 35px;
+    font-family: 'PT Mono', monospace;
+    border: none;
+    border-radius: 3px;
 }
