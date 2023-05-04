@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico">
-    <link rel="stylesheet" href="./assets/default.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/login.css">
     <script src="./assets/login.js" defer></script>
-    <title>Discretion</title>
+    <title>Login Page</title>
 </head>
 <body>
     <header>
-        <h1>Discretion</h1>
+        <h1>Pandora's Box</h1>
         <em>Not everything needs to be public.</em>
     </header>
     <hr />
@@ -19,13 +20,13 @@
         <form id="login-form">
             <fieldset>
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
+                <input type="text" id="username" name="username" class ="text">
             </fieldset>
             <fieldset>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="password" class ="text">
             </fieldset>
-            <input type="submit" value="Log in">
+            <button id="login">Log in</button>
         </form>
         <p>No account? <a href="./register.html">Sign up here</a>.</p>
     </main>
