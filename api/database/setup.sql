@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS user_accounts;
 DROP TABLE IF EXISTS diary_entries;
 DROP TABLE IF EXISTS tokens;
+DROP TABLE IF EXISTS user_accounts;
 
 CREATE TABLE user_accounts (
     user_id INT GENERATED ALWAYS AS IDENTITY,

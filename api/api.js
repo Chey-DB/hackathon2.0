@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const logRoutes = require('./middleware/logger');
-const postRouter = require('./routers/post');
+const diaryRouter = require('./routers/diary');
 const userRouter = require('./routers/user');
 
 const api = express();
@@ -13,12 +13,12 @@ api.use(logRoutes);
 
 api.get("/", (req, res) => {
     res.json({
-        name: "Discretion",
-        description: "Send and receive private messages."
+        name: "Pandora's Box",
+        description: "Only you have the keys to open Pandora's Box."
     })
 })
 
-api.use("/posts", postRouter);
+api.use("/diary", diaryRouter);
 api.use("/users", userRouter);
 
 module.exports = api;
