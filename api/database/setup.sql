@@ -19,7 +19,6 @@ CREATE TABLE diary_entries (
     diary_entry_id INT GENERATED ALWAYS AS IDENTITY,
     category VARCHAR(30) NOT NULL,
     diary_entry VARCHAR(5000) NOT NULL,
-    user_id INT NOT NULL,
     date DATE NOT NULL,
     month INT NOT NULL,
     year INT NOT NULL,
