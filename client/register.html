@@ -5,58 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico">
-    <link rel="stylesheet" href="./assets/default.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel ="stylesheet" href = "./assets/styles/register.css">
     <script src="./assets/register.js" defer></script>
+
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
     <title>Pandora's Box</title>
 </head>
 <body>
     <header>
-        <h1>Pandora's Box</h1>
-        <em>Only you have the key to open Pandora's Box</em>
+        <h1>Pandora's Box 📔</h1>
+        <em>Not everything needs to be public.</em>
     </header>
     <hr />
     <main>
         <form id="register-form">
             <fieldset>
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class ="text">
             </fieldset>
-
             <fieldset>
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="username" name="last_name">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class ="text">
             </fieldset>
 
             <fieldset>
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
+                <input type="text" id="username" name="username" class ="text">
             </fieldset>
-
             <fieldset>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="password" class ="text">
             </fieldset>
-
             <fieldset>
-                <label for="age">Age:</label>
-                <input type="text" id="age" name="age">
+                <label for="username">Country:</label>
+                <input type="text" id="username" name="username" class ="text">
             </fieldset>
-
             <fieldset>
-                <label for="country">Country:</label>
-                <input type="text" id="country" name="country">
+                <label for="password">Age:</label>
+                <input type="password" id="password" name="password" class ="text">
             </fieldset>
-
             <fieldset>
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city">
+                <label for="username">City:</label>
+                <input type="text" id="username" name="username" class ="text">
             </fieldset>
-
             <fieldset>
-                <label for="reason">Reason:</label>
-                <input type="text" id="reason" name="reason">
+                <label for="password">Reason:</label>
+                <input type="password" id="password" name="password" class ="text">
             </fieldset>
-            <input type="submit" value="Register">
+            <button id="register">Register</button>
         </form>
         <p>Already registered? <a href="./login.html">Log in here</a>.</p>
     </main>
