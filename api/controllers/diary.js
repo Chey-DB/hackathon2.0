@@ -29,6 +29,19 @@ async function show (req, res) {
     }
 };
 
+async function update (req, res) {
+    try {
+      const idx = parseInt(req.params.id)
+      const data = req.body
+      const dairy = await Diary.getOneById(idx)
+      const result = await dairy.update(data)
+      res.status(200).json(result)
+  
+    } catch (err) {
+      res.status(404).json(err)
+    }
+  };
+
 async function destroy (req, res) {
     try {
         const id = parseInt(req.params.id);

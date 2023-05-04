@@ -34,6 +34,15 @@ class Diary {
         return newDiaryEntry;
     }
 
+    async update(data) {
+        const { category, diary_entry, user_id, date, month, year } = data
+    const response = await db.query("UPDATE diary SET (category, diary_entry, user_id, date, month, year) = ($1, $2, $3, $4, $5, $6) WHERE diary_entry_id = $7 RETURNING *;", [category, diary_entry, user_id, date, month, year, this.id])
+    if (response.rows.length != 1) {
+      throw new Error("Not able to update the Diary entry")
+    }
+    return new Pokemon(response.rows[0])
+    }
+
     async destroy() {
         let response = await db.query("DELETE FROM diary_entries WHERE diary_entry_id = $1 RETURNING *;", [this.id]);
         return new Diary(response.rows[0]);
