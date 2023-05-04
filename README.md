@@ -5,10 +5,11 @@ A project where the goal is to create a Bridget Jones Diary which allows you to 
 
 ## Installation and Usage
 ### Installation
-npm install -D or npm i -D
+`npm install -D` or `npm i -D`
+
 ### Usage
-1. npm run setup-db
-2. npm run dev
+1. `npm run setup-db`
+2. `npm run dev`
 
 ## Technologies
 1. Javascript 
